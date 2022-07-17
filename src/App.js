@@ -38,6 +38,7 @@ return (
             <div className="row text-center">
               {
                 info.map((element) => 
+                  element && 
                   <CardComponent title={element.title} url={element.hdurl} desc={element.explanation} date={element.date}></CardComponent>
                 )
               }
